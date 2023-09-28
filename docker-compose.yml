@@ -2,7 +2,8 @@ version: "3.9"  # optional since v1.27.0
 services:
   web:
     image: onlyoffice/documentserver
-    WOPI_ENABLED: true
+    environment:
+      - WOPI_ENABLED=true
     restart: always
     ports:
       - "80:80"
