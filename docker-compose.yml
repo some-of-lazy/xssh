@@ -1,6 +1,8 @@
 version: "3.9"  # optional since v1.27.0
 services:
   web:
-    build: .
+    image: onlyoffice/documentserver
+    restart: always
     ports:
       - "80:80"
+      
